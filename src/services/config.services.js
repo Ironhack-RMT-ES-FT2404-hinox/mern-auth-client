@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const service = axios.create({
-  baseURL: `http://localhost:5005/api` // la base de todas las llamadas al backend
+  baseURL: `${import.meta.env.ORIGIN}/api` // la base de todas las llamadas al backend
 })
 
 // nos permite interceptar la llamada justa antes de salir (de client a servder) para añadirle el token
